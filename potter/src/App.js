@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import GuessCard from "./components/GuessCard";
 import Container from "./components/Container";
 import Title from "./components/Title";
+import Score from "./components/Score";
 
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
     return (
       <Container>
         <Title></Title>
+        <Score></Score>
         {/* {this.state.friends.map(friend => (
           <GuessCard
             removeFriend={this.removeFriend}
