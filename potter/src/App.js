@@ -4,6 +4,7 @@ import Container from "./components/Container";
 import Title from "./components/Title";
 import Score from "./components/Score";
 import CardContainer from "./components/CardContainer";
+import Modal from "./components/Modal";
 import icons from "./icons.json";
 
 
@@ -13,7 +14,7 @@ class App extends Component {
 		clicked: [],
 		currentScore: 0,
     highestScore: 0,
-    isHidden: true
+    showModal: false
 	}
 
 	shuffleArr = (arr) => {
@@ -46,7 +47,7 @@ class App extends Component {
 			icons: icons,
 			clicked: [],
       currentScore: 0,
-      isHidden: false
+      showModal: true
     });
 	}
 
@@ -66,7 +67,14 @@ class App extends Component {
 		});
 	}
 
-
+	gameReset = () => {
+		this.setState({
+			icons: icons,
+			clicked: [],
+      currentScore: 0,
+      showModal: false
+    });
+	}
 
 
 	render() {
@@ -79,6 +87,7 @@ class App extends Component {
         highestScore={this.state.highestScore}>
         </Score>
         <CardContainer>
+				{ this.state.showModal ? <Modal gameReset={this.gameReset} /> : null }
           {console.log(icons)}
 					{this.state.icons.map(icon => (
 						<GuessCard
