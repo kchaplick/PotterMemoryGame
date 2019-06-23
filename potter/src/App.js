@@ -12,8 +12,7 @@ class App extends Component {
 		icons,
 		currentScore: 0,
     highestScore: 0,
-    isHidden: true,
-    clicked: false
+    isHidden: true
 	}
 
 	shuffleArr = (arr) => {
@@ -28,27 +27,26 @@ class App extends Component {
 
     let shuffledIconArray = this.shuffleArr(this.state.icons);
 
-		for (let i = 0; i < this.state.icons.length; i++) {
-			if (this.state.icons.id[i] === id) {
-        if (this.state.icons[i].clicked) {
+		for (let i = 0; i < shuffledIconArray.length; i++) {
+			if (shuffledIconArray[i].id === id) {
+        if (shuffledIconArray[i].clicked) {
 					this.handleWrongGuess()
-        }
-      }
+				}
 				else {
-					this.state.icons[i].clicked = true;
+					shuffledIconArray[i].clicked = true;
 					this.handleCorrentGuess(shuffledIconArray)
 				}
 
 			}
-		}
+    }
+  }
 
 
 	handleWrongGuess = () => {
 		this.setState({
 			icons: icons,
       currentScore: 0,
-      isHidden: false,
-      clicked: true
+      isHidden: false
     });
 	}
 
@@ -88,8 +86,7 @@ class App extends Component {
 							key={icon.id}
 							name={icon.name}
 							image={icon.image}
-              handleIconClick={this.handleIconClick}
-              clicked ={this.state.clicked}
+							handleIconClick={this.handleIconClick}
 						/>
 					))}
 				</CardContainer>
