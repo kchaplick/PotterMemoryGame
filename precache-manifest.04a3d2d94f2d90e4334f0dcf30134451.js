@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a173ad71e983af2849dc02d19b77801",
+    "revision": "e22dbcbc40e5b38c97af10244a7c0afe",
     "url": "/PotterMemoryGame/index.html"
   },
   {
-    "revision": "dacfc5e02a2eba55ea23",
-    "url": "/PotterMemoryGame/static/css/main.35a6a4e5.chunk.css"
+    "revision": "49f52cb1e48cd4ef3c55",
+    "url": "/PotterMemoryGame/static/css/main.15e2768f.chunk.css"
   },
   {
     "revision": "85a1d543af124641f09c",
     "url": "/PotterMemoryGame/static/js/2.5cb12968.chunk.js"
   },
   {
-    "revision": "dacfc5e02a2eba55ea23",
+    "revision": "49f52cb1e48cd4ef3c55",
     "url": "/PotterMemoryGame/static/js/main.5b145dbf.chunk.js"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PotterMemoryGame/static/js/runtime~main.9522ac36.js"
   },
   {
-    "revision": "4c966ddc2bfb1d570a3b0e2813e43878",
-    "url": "/PotterMemoryGame/static/media/background.4c966ddc.jpg"
+    "revision": "2a97ff91a44f8b683a95583abea12ceb",
+    "url": "/PotterMemoryGame/static/media/background.2a97ff91.jpg"
   }
 ]);
