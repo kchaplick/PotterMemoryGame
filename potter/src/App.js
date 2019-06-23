@@ -10,6 +10,7 @@ import icons from "./icons.json";
 class App extends Component {
 	state = {
 		icons,
+		clicked: [],
 		currentScore: 0,
     highestScore: 0,
     isHidden: true
@@ -24,27 +25,26 @@ class App extends Component {
   }
 
 	handleIconClick = (id) => {
+		console.log(id)
+		let shuffledIconArray = this.shuffleArr(this.state.icons);
+		
+		this.setState({ clicked: [...this.state.clicked, id] });
 
-    let shuffledIconArray = this.shuffleArr(this.state.icons);
-
-		for (let i = 0; i < shuffledIconArray.length; i++) {
-			if (shuffledIconArray[i].id === id) {
-        if (shuffledIconArray[i].clicked) {
+    if (this.state.clicked.includes(id)) {
 					this.handleWrongGuess()
-				}
-				else {
-					shuffledIconArray[i].clicked = true;
+			}
+			else {
 					this.handleCorrentGuess(shuffledIconArray)
 				}
 
 			}
-    }
-  }
+
 
 
 	handleWrongGuess = () => {
 		this.setState({
 			icons: icons,
+			clicked: [],
       currentScore: 0,
       isHidden: false
     });
