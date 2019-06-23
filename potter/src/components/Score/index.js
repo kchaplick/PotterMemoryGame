@@ -6,7 +6,7 @@ function Score(props) {
   return (
     <div className="row">
       <div className="col-sm">
-        <div class="jumbotron">
+        <div className="jumbotron">
         <Instructions />
         <span>Current Score: {props.currentScore} </span>
         <span>Highest Score: {props.highestScore}</span>
