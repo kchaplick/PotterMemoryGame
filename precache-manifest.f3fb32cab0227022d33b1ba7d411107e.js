@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64a8874f97242b74fbe7223ba0f8d568",
+    "revision": "5fadfa568f9c41fe30d4aa126d1840f8",
     "url": "/PotterMemoryGame/index.html"
   },
   {
-    "revision": "0fec2b8a3139895b9108",
+    "revision": "2c21e9d93c6e7653947e",
     "url": "/PotterMemoryGame/static/css/main.242632b1.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PotterMemoryGame/static/js/2.5cb12968.chunk.js"
   },
   {
-    "revision": "0fec2b8a3139895b9108",
-    "url": "/PotterMemoryGame/static/js/main.4538f2ea.chunk.js"
+    "revision": "2c21e9d93c6e7653947e",
+    "url": "/PotterMemoryGame/static/js/main.bcb13138.chunk.js"
   },
   {
     "revision": "a5dfee5a1e9050c1d900",
