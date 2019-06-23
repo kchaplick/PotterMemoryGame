@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/PotterMemoryGame/precache-manifest.76ac4368c05b38704b7d845d068c313f.js"
+  "/PotterMemoryGame/precache-manifest.9ee75564707e2c549fd599ad549cd69c.js"
 );
 
 self.addEventListener('message', (event) => {
