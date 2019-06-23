@@ -2,46 +2,46 @@
   {
     "id": 1,
     "name": "bolt",
-    "image": "../../images/bolt.png"
+    "image": "./images/bolt.png"
   },
   {
     "id": 2,
     "name": "broom",
-    "image": "../../images/broom.png"
+    "image": "./images/broom.png"
   },
   {
     "id": 3,
     "name": "cauldron",
-    "image": "../../images/cauldron.png"
+    "image": "./images/cauldron.png"
   },
   {
     "id": 4,
     "name": "diary",
-    "image": "../../images/diary.png"
+    "image": "./images/diary.png"
   },
   {
     "id": 5,
     "name": "glasses",
-    "image": "../../images/glasses.png"
+    "image": "./images/glasses.png"
   },
   {
     "id": 6,
     "name": "hallows",
-    "image": "../../images/hallows.png"
+    "image": "./images/hallows.png"
   },
   {
     "id": 7,
     "name": "letter",
-    "image": "../../images/letter.png"
+    "image": "./images/letter.png"
   },
   {
     "id": 8,
     "name": "owl",
-    "image": "../../images/owl.png"
+    "image": "./images/owl.png"
   },
   {
     "id": 9,
     "name": "snitch",
-    "image": "../../images/snitch.png"
+    "image": "./images/snitch.png"
   }
 ]
