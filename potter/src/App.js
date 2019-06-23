@@ -12,20 +12,31 @@ class App extends Component {
 		icons,
 		currentScore: 0,
     highestScore: 0,
-    isHidden: true
+    isHidden: true,
+    clicked: false
 	}
 
+	shuffleArr = (arr) => {
+		for (let i = arr.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[arr[i], arr[j]] = [arr[j], arr[i]];
+		}
+		return arr;
+  }
 
 	handleIconClick = (id) => {
 
-    let newIconArray = this.shuffle(this.state.icons);
-		for (let i = 0; i < newIconArray.length; i++) {
-			if (newIconArray[i].id === id) {
+    let shuffledIconArray = this.shuffleArr(this.state.icons);
+
+		for (let i = 0; i < this.state.icons.length; i++) {
+			if (this.state.icons.id[i] === id) {
+        if (this.state.icons[i].clicked) {
 					this.handleWrongGuess()
-				}
+        }
+      }
 				else {
-					newIconArray[i].clicked = true;
-					this.handleCorrentGuess(newIconArray)
+					this.state.icons[i].clicked = true;
+					this.handleCorrentGuess(shuffledIconArray)
 				}
 
 			}
@@ -36,7 +47,8 @@ class App extends Component {
 		this.setState({
 			icons: icons,
       currentScore: 0,
-      isHidden: false
+      isHidden: false,
+      clicked: true
     });
 	}
 
@@ -56,13 +68,7 @@ class App extends Component {
 		});
 	}
 
-	shuffle = (arr) => {
-		for (let i = arr.length - 1; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			[arr[i], arr[j]] = [arr[j], arr[i]];
-		}
-		return arr;
-	}
+
 
 
 	render() {
@@ -82,14 +88,14 @@ class App extends Component {
 							key={icon.id}
 							name={icon.name}
 							image={icon.image}
-							handleIconClick={this.handleIconClick}
+              handleIconClick={this.handleIconClick}
+              clicked ={this.state.clicked}
 						/>
 					))}
 				</CardContainer>
         </Container>
 		);
   }
- 
 }
 
 
