@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-function CardContainer() {
+function CardContainer(props) {
   return (
     <div className="row">
-      <div className="col-sm">
-
-      </div>
+      
+      {props.children}
+      
     </div>
   )
 }
