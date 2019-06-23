@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PotterMemoryGame/static/css/main.242632b1.chunk.css",
-    "main.js": "/PotterMemoryGame/static/js/main.bcb13138.chunk.js",
-    "main.js.map": "/PotterMemoryGame/static/js/main.bcb13138.chunk.js.map",
+    "main.js": "/PotterMemoryGame/static/js/main.5b145dbf.chunk.js",
+    "main.js.map": "/PotterMemoryGame/static/js/main.5b145dbf.chunk.js.map",
     "runtime~main.js": "/PotterMemoryGame/static/js/runtime~main.9522ac36.js",
     "runtime~main.js.map": "/PotterMemoryGame/static/js/runtime~main.9522ac36.js.map",
     "static/js/2.5cb12968.chunk.js": "/PotterMemoryGame/static/js/2.5cb12968.chunk.js",
     "static/js/2.5cb12968.chunk.js.map": "/PotterMemoryGame/static/js/2.5cb12968.chunk.js.map",
     "index.html": "/PotterMemoryGame/index.html",
-    "precache-manifest.f3fb32cab0227022d33b1ba7d411107e.js": "/PotterMemoryGame/precache-manifest.f3fb32cab0227022d33b1ba7d411107e.js",
+    "precache-manifest.76ac4368c05b38704b7d845d068c313f.js": "/PotterMemoryGame/precache-manifest.76ac4368c05b38704b7d845d068c313f.js",
     "service-worker.js": "/PotterMemoryGame/service-worker.js",
     "static/css/main.242632b1.chunk.css.map": "/PotterMemoryGame/static/css/main.242632b1.chunk.css.map"
   }
